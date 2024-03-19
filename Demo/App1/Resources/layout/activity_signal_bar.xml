@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="start"
+                android:enabled="true"
+                android:textSize="16sp"
+                android:text="Wifi Signal" 
+                android:textStyle="bold"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:enabled="true"
+                android:textSize="16sp"
+                android:text="GPS Signal" 
+                android:textStyle="bold"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="end"
+                android:enabled="true"
+                android:textSize="16sp"
+                android:text="GSM Signal" 
+                android:textStyle="bold"
+                android:textColor="#000000"
+                />
+
+            </FrameLayout>
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+        
+                 <ImageView
+                     android:id="@+id/imgWifiSignal"
+                     android:layout_width="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                     android:layout_height="50dp"
+                     android:enabled="true"
+                android:layout_gravity="start"
+                    android:src="@drawable/ic_signal_bar_full"
+                />
+
+            <ImageView
+                     android:id="@+id/imgGpsSignal"
+                     android:layout_width="70dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                     android:layout_height="50dp"
+                     android:enabled="true"
+                android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_gps_2_bar"
+                />
+
+                <ImageView
+                 android:id="@+id/imgGsmSignal"
+                 android:layout_width="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                 android:layout_height="50dp"
+                 android:enabled="true"
+                android:layout_gravity="end"
+                android:background="@color/red"
+            />
+
+            </FrameLayout>
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+             <TextView
+                android:id="@+id/tvWifiSignal"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:enabled="true"
+                android:textSize="16sp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/tvGpsSignal"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:enabled="true"
+                android:textSize="16sp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/tvGsmSignal"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:enabled="true"
+                android:textSize="16sp"
+                android:text="0" />
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:enabled="true"
+                android:textSize="16sp"
+                android:text="Test Form" 
+                android:textStyle="bold"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:enabled="true"
+                android:textSize="14sp"
+                android:text="Wifi Signal Bar" 
+                android:textColor="#000000"
+                />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+        
+                 <ImageView
+                     android:id="@+id/imgSignalLevel"
+                     android:layout_width="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                     android:layout_height="50dp"
+                     android:enabled="true"
+                    android:src="@drawable/ic_signal_bar_full"
+                />
+
+                <EditText
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:hint="dbm value"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                android:digits="0123456789.-"
+                    android:inputType="phone"
+                    android:id="@+id/etWifiSignalValue"/>
+
+                <Button
+                    android:id="@+id/btnSubmitWifiValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="16dp"
+               />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSignalLevel"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:enabled="true"
+                android:textSize="14sp"
+                android:text="Signal Strength: -" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:enabled="true"
+                android:textSize="14sp"
+            android:text="GSM Signal Bar" 
+            android:textColor="#000000"
+            />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+        
+             <ImageView
+                 android:id="@+id/imgGsmSignalLevel"
+                 android:layout_width="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                 android:layout_height="50dp"
+                 android:enabled="true"
+                android:background="@color/red"
+            />
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:hint="percentage value"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:inputType="numberDecimal"
+                android:id="@+id/etGsmSignalValue"/>
+
+            <Button
+                android:id="@+id/btnSubmitGsmValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="16dp"
+           />
+
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvGsmSignalLevel"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:enabled="true"
+                android:textSize="14sp"
+                android:text="Signal Strength: -" />
+
+        </LinearLayout>
+
+</LinearLayout>

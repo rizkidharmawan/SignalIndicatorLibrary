@@ -1,0 +1,10 @@
+values/strings.xml;values/strings.xml
+values/colors.xml;values/colors.xml
+drawable/ic_gps_1_bar.png;drawable/ic_gps_1_bar.png
+drawable/ic_gps_2_bar.png;drawable/ic_gps_2_bar.png
+drawable/ic_gps_full_bar.png;drawable/ic_gps_full_bar.png
+drawable/ic_signal_0_bar.png;drawable/ic_signal_0_bar.png
+drawable/ic_signal_1_bar.png;drawable/ic_signal_1_bar.png
+drawable/ic_signal_2_bar.png;drawable/ic_signal_2_bar.png
+drawable/ic_signal_3_bar.png;drawable/ic_signal_3_bar.png
+drawable/ic_signal_bar_full.png;drawable/ic_signal_bar_full.png

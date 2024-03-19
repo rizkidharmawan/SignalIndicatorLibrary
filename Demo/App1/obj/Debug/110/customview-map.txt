@@ -1,0 +1,8 @@
+color;C:\Users\SNC Rizki\Documents\SNC\Xamarin\App1\App1\obj\Debug\110\lp\76\jl\res\values\colors.xml
+color;obj\Debug\110\res\values\colors.xml
+resources;C:\Users\SNC Rizki\Documents\SNC\Xamarin\App1\App1\obj\Debug\110\lp\76\jl\res\values\colors.xml
+resources;C:\Users\SNC Rizki\Documents\SNC\Xamarin\App1\App1\obj\Debug\110\lp\76\jl\res\values\strings.xml
+resources;obj\Debug\110\res\values\colors.xml
+resources;obj\Debug\110\res\values\strings.xml
+string;C:\Users\SNC Rizki\Documents\SNC\Xamarin\App1\App1\obj\Debug\110\lp\76\jl\res\values\strings.xml
+string;obj\Debug\110\res\values\strings.xml

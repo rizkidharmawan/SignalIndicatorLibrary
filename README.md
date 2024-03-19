@@ -2,6 +2,8 @@
 
 Library ini menyediakan class indikator sinyal untuk digunakan dalam project Android Xamarin. Class ini memungkinkan Anda untuk menampilkan indikator sinyal untuk GSM, WiFi, dan GPS.
 
+![Signal Indicator](Resources/drawable/Screenshot_20240319_162458_Module App.jpg)
+
 ## Instalasi
 
 Anda dapat menginstal library ini dengan menambahkan `SignalIndicatorsLibrary` sebagai existing project ke dalam project anda.

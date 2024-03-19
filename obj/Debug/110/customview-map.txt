@@ -1,0 +1,4 @@
+color;obj\Debug\110\res\values\colors.xml
+resources;obj\Debug\110\res\values\colors.xml
+resources;obj\Debug\110\res\values\strings.xml
+string;obj\Debug\110\res\values\strings.xml

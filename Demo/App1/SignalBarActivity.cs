@@ -38,6 +38,13 @@ namespace App1
         private EditText etGsmSignalValue;
         private Button btnSubmitGsmValue;
 
+
+        private ImageView imgGpsSignalLevel;
+        private TextView tvGpsSignalLevel;
+
+        private EditText etGpsSignalValue;
+        private Button btnSubmitGpsValue;
+
         private Handler handler;
         private const int RequestWifiPermissionCode = 1;
         private const int RequestFineLocationPermissionCode = 2;
@@ -90,6 +97,20 @@ namespace App1
                         etWifiSignalValue.Text.Equals("") ? 0 : System.Double.Parse(etGsmSignalValue.Text),
                         tvGsmSignalLevel,
                         imgGsmSignalLevel
+                    );
+            };
+
+            imgGpsSignalLevel = FindViewById<ImageView>(Resource.Id.imgGpsSignalLevel);
+            tvGpsSignalLevel = FindViewById<TextView>(Resource.Id.tvGpsSignalLevel);
+            etGpsSignalValue = FindViewById<EditText>(Resource.Id.etGpsSignalValue);
+            btnSubmitGpsValue = FindViewById<Button>(Resource.Id.btnSubmitGpsValue);
+            btnSubmitGpsValue.Click += (sender, e) =>
+            {
+                SignalLevelUtils.setGpsSignalStrength(
+                        this,
+                        etGpsSignalValue.Text.Equals("") ? 0 : System.Double.Parse(etGpsSignalValue.Text),
+                        tvGpsSignalLevel,
+                        imgGpsSignalLevel
                     );
             };
 

@@ -304,4 +304,74 @@
 
         </LinearLayout>
 
+    
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:enabled="true"
+                android:textSize="14sp"
+            android:text="GPS Signal Bar" 
+            android:textColor="#000000"
+            />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+        
+             <ImageView
+                 android:id="@+id/imgGpsSignalLevel"
+                 android:layout_width="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                 android:layout_height="50dp"
+                 android:enabled="true"
+                android:src="@drawable/ic_gps_full_bar"
+            />
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:hint="total satellite"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:inputType="numberDecimal"
+                android:id="@+id/etGpsSignalValue"/>
+
+            <Button
+                android:id="@+id/btnSubmitGpsValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="16dp"
+           />
+
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvGpsSignalLevel"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:enabled="true"
+                android:textSize="14sp"
+                android:text="Signal Strength: -" />
+
+        </LinearLayout>
+
 </LinearLayout>

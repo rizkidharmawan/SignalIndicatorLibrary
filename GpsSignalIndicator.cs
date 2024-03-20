@@ -105,28 +105,42 @@ namespace SignalIndicatorsLibrary
                 Log.Debug("SatelliteStatus", "Moderate Signal Count: " + moderateSignalCount);
                 Log.Debug("SatelliteStatus", "Weak Signal Count: " + weakSignalCount);
 
-                // Tampilkan gambar sesuai dengan kategori kekuatan sinyal
-                if (strongSignalCount > 0)
+                if (totalSatellites >= 8)
                 {
-                    activity.RunOnUiThread(() =>
-                    {
-                        imgGpsSignal.SetImageResource(Resource.Drawable.ic_gps_full_bar); // Ganti dengan gambar 3 bar Anda
-                    });
+                    imgGpsSignal.SetImageResource(Resource.Drawable.ic_gps_full_bar); // Ganti dengan gambar 3 bar Anda
                 }
-                else if (moderateSignalCount > 0)
+                else if (totalSatellites >= 5)
                 {
-                    activity.RunOnUiThread(() =>
-                    {
-                        imgGpsSignal.SetImageResource(Resource.Drawable.ic_gps_2_bar); // Ganti dengan gambar 2 bar Anda
-                    });
+                    imgGpsSignal.SetImageResource(Resource.Drawable.ic_gps_2_bar); // Ganti dengan gambar 2 bar Anda
                 }
                 else
                 {
-                    activity.RunOnUiThread(() =>
-                    {
-                        imgGpsSignal.SetImageResource(Resource.Drawable.ic_gps_1_bar); // Ganti dengan gambar 1 bar Anda
-                    });
+                    imgGpsSignal.SetImageResource(Resource.Drawable.ic_gps_1_bar); // Ganti dengan gambar 1 bar Anda
                 }
+
+
+                // Tampilkan gambar sesuai dengan kategori kekuatan sinyal
+                //if (strongSignalCount > 0)
+                //{
+                //    activity.RunOnUiThread(() =>
+                //    {
+                //        imgGpsSignal.SetImageResource(Resource.Drawable.ic_gps_full_bar); // Ganti dengan gambar 3 bar Anda
+                //    });
+                //}
+                //else if (moderateSignalCount > 0)
+                //{
+                //    activity.RunOnUiThread(() =>
+                //    {
+                //        imgGpsSignal.SetImageResource(Resource.Drawable.ic_gps_2_bar); // Ganti dengan gambar 2 bar Anda
+                //    });
+                //}
+                //else
+                //{
+                //    activity.RunOnUiThread(() =>
+                //    {
+                //        imgGpsSignal.SetImageResource(Resource.Drawable.ic_gps_1_bar); // Ganti dengan gambar 1 bar Anda
+                //    });
+                //}
             }
         }
     }
